@@ -112,11 +112,26 @@
       border: none;
     }
 
+    .local-video-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px 20px 20px;
+      box-sizing: border-box;
+    }
+
+    .local-video-container video {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border: 4px solid #FBD5AB;
+    }
+
     .audio-container {
       width: 100%;
       display: flex;
       justify-content: center;
-      padding: 40px 20px;
+      padding: 20px;
       box-sizing: border-box;
     }
 
@@ -180,9 +195,16 @@
     <iframe src="https://www.youtube.com/embed/fPntuMTnD8g?si=XDd4-m571njJzjPt" allowfullscreen></iframe>
   </div>
 
+  <div class="local-video-container">
+    <video controls>
+      <source src="Video.mp4" type="video/mp4">
+      Vaš preglednik ne podržava video tag.
+    </video>
+  </div>
+
   <div class="audio-container">
     <audio controls>
-      <source src="Florence the Machine - Call me Cruella (From CruellaOfficial Lyric Video).mp3" type="audio/mpeg">
+      <source src="Zvuk.mp3" type="audio/mpeg">
       Vaš preglednik ne podržava audio element.
     </audio>
   </div>
